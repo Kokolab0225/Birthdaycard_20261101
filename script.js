@@ -80,6 +80,13 @@ function closeCard(event) {
         postcard.classList.remove('flipped');
     }, 200);
 
+    const sound = document.getElementById('birthday-sound');
+// 音楽を停止して、次に開いたときは最初から再生する
+if (sound) {
+    sound.pause();
+    sound.currentTime = 0;
+}
+
     // 3. さらに少し遅らせてカードを封筒の中に隠し、封筒を元通りにする
     setTimeout(() => {
         wrapper.classList.remove('popup');
