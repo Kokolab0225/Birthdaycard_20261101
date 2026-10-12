@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat_card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- letterbox -->
+        <div id="envelope" class="envelope" onclick="openEnvelope()">
+            <img src="Letterbox.png" alt="Letter">
+
+        </div>
+        <p class="envelope-caption">Dear 尚樹くん</p>
+
+        <!-- Postcard -->
+        <div id="postcard-wrapper" class="postcard-wrapper hidden">
+            <div id="postcard" class="postcard" onclick="flipCard()">
+                <!-- Card1 -->
+                <div class="postcard-side front">
+                    <img src="Card1_birthday.jpg" alt="postcard_front">
+                </div>
+                <!-- Card2 -->
+                <div class="postcard-side back">
+                    <!-- back -->
+                    <img src="Card2_birthday.jpg" class="back-bg" alt="postcard_back">
+                    <!-- message_script -->
+                    <div class="message-container">
+                        <img src="moji1.png" class="msg-line" alt="line1">
+                        <img src="moji2.png" class="msg-line" alt="line2">
+                        <img src="moji3.png" class="msg-line" alt="line3">
+                        <img src="moji4.png" class="msg-line" alt="line4">
+
+                    </div>
+                </div>
+            </div>
+            <!-- flipmessage -->
+             <!-- ポストカードの外側に配置する閉じるボタン -->
+
+        <button id="close-btn" class="close-btn" onclick="closeCard(event)">閉じる</button>
+            <p id="instruction" class="instruction">猫ちゃんをさわってみよう</p>
+        </div>
+    </div>
+
+    <!-- music -->
+    <audio id="birthday-sound" src="leberch-happy-birthday-581704.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
