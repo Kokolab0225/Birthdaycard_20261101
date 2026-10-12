@@ -73,7 +73,7 @@ body {
 
 /* 3Dひっくり返りの設定 */
 .postcard {
-    width: 100%;
+    width: 98%;
     height: 260px;
     position: relative;
     transform-style: preserve-3d;
