@@ -31,7 +31,15 @@ body {
     font-weight: bold;
     color: #333;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 2px;opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* カードが開いたら宛名を非表示にする */
+.card-container:has(.postcard-wrapper.popup) .envelope-caption {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* 封筒のスタイル */
