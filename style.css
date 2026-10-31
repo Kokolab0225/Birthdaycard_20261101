@@ -26,8 +26,8 @@ body {
 
 /* 開封前の封筒の下に表示する文字 */
 .envelope-caption {
-    margin: 12px 0 0;
-    font-size: 12px;
+    margin: 12px;
+    font-size: 15px;
     font-weight: bold;
     color: #333;
     text-align: center;
